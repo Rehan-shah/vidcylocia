@@ -27,6 +27,7 @@ function CurrentCourse() {
         <div className='pt-4 pr-4'>
           <Image src={"https://i.ytimg.com/vi/d_qvLDhkg00/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1bxVWiBjy9XzSjL8GOPqfdjqbZg"}
             width={220}
+            alt={"coursea"}
             height={120}
             style={{ borderRadius: "10px" }}
           />
