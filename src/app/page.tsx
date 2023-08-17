@@ -39,6 +39,7 @@ function CurrentCourse() {
           <Image src={"https://i.ytimg.com/vi/d_qvLDhkg00/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1bxVWiBjy9XzSjL8GOPqfdjqbZg"}
             width={220}
             height={120}
+            alt='couresa'
             style={{ borderRadius: "10px" }}
           />
           <p className='text-md pt-2 text-[#FD8B1F]'>Math</p>
