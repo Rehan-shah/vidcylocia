@@ -113,19 +113,6 @@ function TableSection() {
 export default function Home() {
 
 
-  const handleKeyPress = (event: React.KeyboardEvent) => {
-    console.log('Key pressed:', event.key);
-    // Add your key press handling logic here
-  };
-
-  useEffect(() => {
-    window.addEventListener('keypress', handleKeyPress);
-
-    return () => {
-      window.removeEventListener('keypress', handleKeyPress);
-    };
-  }, []);
-
   return (
     <div className='mx-5 mt-3'>
       <Search />
