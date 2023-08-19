@@ -2,7 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'], weight: ['400', '600', '100', '700'],
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
