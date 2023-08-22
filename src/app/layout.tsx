@@ -1,3 +1,4 @@
+import NavBar from '@/app/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className='grid grid-cols-6'>
-          <span className='border border-black'><p>Hello</p></span>
+          <span ><NavBar /></span>
           <span className="col-span-5">{children}</span>
         </div>
       </body>

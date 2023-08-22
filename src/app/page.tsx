@@ -39,13 +39,13 @@ function Search() {
 
 function CurrentCourse() {
   return (
-    <div className="rounded-2xl p-5 px-4 mt-5 " style={{ boxShadow: '0px 0px 20px 2px rgba(0, 0, 0, 0.10)' }}>
+    <div className="rounded-2xl p-4 px-4 mt-5 " style={{ boxShadow: '0px 0px 20px 2px rgba(0, 0, 0, 0.10)' }}>
       <h1 className={`text-lg font-[600] opacity-75 `}>Recent Activity:</h1>
       <div className='lg:flex md:flex'>
-        <div className='pt-2 pr-4'>
+        <div className='pt-2 pr-3'>
           <Image src={"https://i.ytimg.com/vi/d_qvLDhkg00/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1bxVWiBjy9XzSjL8GOPqfdjqbZg"}
-            width={220}
-            height={120}
+            width={200}
+            height={80}
             alt='couresa'
             style={{ borderRadius: "10px" }}
           />
@@ -55,8 +55,8 @@ function CurrentCourse() {
         </div>
         <div className='pt-2 pr-4'>
           <Image src={"https://i.ytimg.com/vi/d_qvLDhkg00/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1bxVWiBjy9XzSjL8GOPqfdjqbZg"}
-            width={220}
-            height={120}
+            width={200}
+            height={80}
             alt='couresa'
             style={{ borderRadius: "10px" }}
           />

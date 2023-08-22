@@ -1,16 +1,15 @@
 
-function Search() {
+function Page() {
 
-  return (
-    <div className="border-r-8 bg-[#F7F8F9] flex py-2 px-3 rounded-2xl w-2/6 items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-      </svg>
-
-
-      <input placeholder='Search here' className='bg-[#F7F8F9] text-xl px-2 focus:outline-none' />
-    </div>
-  )
+  return (<div className="h-56 grid grid-cols-1 gap-4 grid-row-5 my-30 content-around ...">
+    <div className="bg-blue-500 rounded-sm h-24">01</div>
+    <div className="bg-blue-500 rounded-sm h-24">02</div>
+    <div className="bg-blue-500 rounded-sm h-24">03</div>
+    <div className="bg-blue-500 rounded-sm h-24">04</div>
+    <div className="bg-blue-500 rounded-sm h-24">05</div>
+  </div>)
 }
 
-export default Search
+
+
+export default Page
