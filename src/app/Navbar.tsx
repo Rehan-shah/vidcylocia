@@ -55,36 +55,41 @@ import { useState } from "react";
 function AnimatedTabs() {
   let [activeTab, setActiveTab] = useState(items[0].id);
 
+  // let navbar_background = "bg-[#FFF2F2]"
+  let navbar_graident = "bg-gradient-to-b from-gray-300 via-transparent to-gray-300"
+
   return (
 
-    <div className="px-2 pr-4 h-[100vh] bg-gradient-to-b from-gray-300 via-transparent to-gray-300 grid grid-row-8 content-between">
+    <div className={`px-2 pr-4 h-[100vh] ${navbar_graident} grid grid-row-8 content-between`}>
       <div>
         <h1 className="text-md font-semibold py-2">LOGO</h1>
       </div>
       <div >
         {items.map((item) => (
-          <button
-            key={item.id}
-            onClick={() => setActiveTab(item.id)}
-            className={`${activeTab === item.id ? "text-navbar-default" : "hover:text-navbar-hover"
-              } relative w-full p-2.5 my-0.5 text-md font-semibold text-navbar-default outline-sky-400 transition focus-visible:outline-2 block z-10 `}
-            style={{
-              WebkitTapHighlightColor: "transparent",
-            }}
-          >
-            {activeTab === item.id && (
-              <motion.span
-                layoutId="bubble"
-                className="absolute inset-0 -z-10 bg-navbar-background"
-                style={{ borderRadius: 10 }}
-                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-              />
-            )}
-            <Link href={item.link} className="flex justify-start gap-1.5 text-md" >{item.icon} {item.name}</Link>
-          </button>
+          <Link href={item.link} className="text-md" >
+            <button
+              key={item.id}
+              onClick={() => setActiveTab(item.id)}
+              className={`${activeTab === item.id ? "text-navbar-focus" : "hover:text-navbar-hover"
+                } relative w-full p-2.5 my-0.5 text-md font-semibold text-navbar-default outline-sky-400 transition focus-visible:outline-2 block z-10 `}
+              style={{
+                WebkitTapHighlightColor: "transparent",
+              }}
+            >
+              {activeTab === item.id && (
+                <motion.span
+                  layoutId="bubble"
+                  className="absolute inset-0 -z-10 bg-navbar-background"
+                  style={{ borderRadius: 5 }}
+                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                />
+              )}
+              <span className="flex justify-start gap-1.5 ">{item.icon} {item.name}</span>
+            </button>
+          </Link>
         ))}
       </div>
-      <div className="row-span-6 self-end py-10 ">
+      <div className="row-span-6 self-end py-8 ">
         Logout
       </div>
     </div>

@@ -20,8 +20,15 @@ module.exports = {
         'navbar': {
           hover: '#1e293b',
           background: '#b6caff',
-          default: "#1F4652"
+          default: "#1F4652",
+          focus: "#1F4652"
         },
+        // 'navbar': {
+        //   hover: '#7286D3',
+        //   background: '#E5E0FF',
+        //   default: "#8EA7E9",
+        //   focus: "#7286D3"
+        // },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
